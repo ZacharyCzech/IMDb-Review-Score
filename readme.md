@@ -12,4 +12,7 @@ A desktop application built with [Eel](https://github.com/ChrisKnott/Eel) that a
 
 pip install -r requirements.txt
 
-- Launch it by opening app.py 
+- Launch it by opening app.py
+- The IMDb ID is the last part of an IMDb media link. For example, in https://www.imdb.com/title/tt0111161/ the ID is tt0111161.
+- The app is slow for movies with many reviews since it uses Selenium to load them all.
+- Calculates an user approval score based on amount of positive and negative reviews.
