@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMDb Analyzer</title>
+    <link rel="icon" type="image/png" href="img/icon/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-mode">
+    <div id="modeSwitch" class="mode-switch">
+        <img id="modeIcon" src="img/icon/dark-mode.svg" alt="Switch To Dark Mode">
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div id="container">
+        <div id="movieData">
+            <div class="data-box">
+                <img id="poster" src="img/placeholder.png" alt="Poster">
+                <div class="info">
+                    <p class="infoText" id="title">--</p>
+                    <p class="infoText"><span id="avgRating">--</span><img id="starIcon" src="img/icon/star.svg" alt="Star"></p>
+                    <p class="infoText"><span id="numRatings">--</span> ratings</p>
+                    <p class="infoText"><span id="reviewCount">--</span> reviews</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="appFunctions">
+            <input type="text" id="imdb_id" placeholder="Enter IMDb ID (e.g. tt0111161)">
+            <div id="inputSection">
+                <button id="importButton">Import ID</button>
+                <button id="analyzeButton">Calculate Score</button>
+            </div>
+
+            <p id="status">Import an IMDb ID. You can copy it from the URL.</p>
+            <div id="sentimentResult">
+                <p>User Score: <span id="posPct">--</span>%</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="eel.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
